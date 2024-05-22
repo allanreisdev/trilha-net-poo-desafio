@@ -3,9 +3,9 @@ namespace DesafioPOO.Models
     public abstract class Smartphone
     {
         public string Numero { get; set; }
-        public string Modelo { get; private set; }
-        public string Imei { get; private set; }
-        public int Memoria { get; private set; }
+        public string Modelo { get; protected set; }
+        public string Imei { get; protected set; }
+        public int Memoria { get; protected set; }
 
         public Smartphone(string numero, string modelo, string imei, int memoria)
         {
